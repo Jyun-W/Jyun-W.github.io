@@ -1,0 +1,249 @@
+/*-----------colors
+#2B2D42 - dark blue
+#8D99AE - light blue
+#408080 - greed
+#EF233C - red
+#EDF2F4 - blue to white
+--------------------------*/
+
+/*-------------Global styles-------------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'caveat', cursive;
+    font-weight: 400;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+h3 {
+    font-family: cursive;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*---------------Navigation------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #2B2D42;
+}
+
+@media (min-width: 440px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/*----------------header---------------------*/
+header {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #b5bfd1;
+}
+
+header h1 {
+    color: #589b9b;
+}
+
+header h2 {
+    color: #EDF2F4;
+}
+
+h1 {
+    margin: 0;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media (min-width: 935px) {
+    .content-wrap {
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/*--------------------work---------------------------*/
+.work_experience {
+    padding-top: 40px;
+    background-color: #EDF2F4;
+}
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width:935px) {
+    .job-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+@media (min-width: 935px) {
+    .job-description p:first-of-type {
+        margin-top: 0;
+    }
+}
+
+/*--------------------Effort---------------------*/
+.effort {
+    h3 {
+        color: #66b4b4;
+        font-size: 30px;
+    }
+}
+
+.effort {
+    padding: 40px 40px;
+    background: #2B2D42;
+    color: #e1eef3;
+
+}
+
+ul {
+    margin-top: 0;
+}
+
+
+.effort-description{
+    padding: 40px 10%;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(252, 233, 233);
+}
+
+/*-----------------------plan-----------------------------*/
+.plan-wrapper{
+    text-align: center;
+}
+
+.plan {
+    padding: 40px 40px;
+    background-color: #EDF2F4;
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    p {
+        color: #7d7f96;
+    }
+}
+
+.time_plan {
+    text-align: center;
+}
+
+/*---------------------interpersonal---------------------------*/
+.interpersonal {
+    padding: 40px 20%;
+    background-color: #2B2D42;
+    color: #e1eef3;
+}
+
+.point {
+    border: 4px double #ffc0c0;/* 框線顏色 */
+    margin: 2em 0;
+    padding: 30px 15%;
+    position: relative;
+    color: #e1eef3;
+    text-align: center;
+}
+.point::before {
+    background-color: #2B2D42;
+    color: #ffc0c0;
+    content: "POINT";/*標題*/
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+/*-----------------------reflection----------------------------*/
+.reflection {
+    background-color: #EDF2F4;
+    }
+
+.left {
+    margin: 1%;
+    position: relative;
+    float: left;
+    width: 38%;
+    font-family:DFKai-sb;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    h2 {
+        padding: 40px 0 0 5%;
+        color: #e99292;
+    }
+}
+
+/*------------------------emotional processing------------------*/
+.right {
+    margin: 1%;
+    position: relative;
+    float: left;
+    width: 58%;
+    font-family:DFKai-sb;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    h2 {
+        padding: 40px 0 0 5%;
+        color: #e99292;
+    }
+}
